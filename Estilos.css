@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #41cef5;
+}
+
+
+.carrito-bn {
+    background-color: #41b3f5;
+    color: #111;
+
+    border: none;
+    padding: 12px 18px;
+
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.carrito-bn:hover {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+.inicio{
+    background-image: url("https://www.menshealth.com/es/fitness/a63650749/cbum-chris-bumstead-foto-alarmas-culturismo/");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #ddd;
+    text-align: center;
+}
+
+.hero {
+    min-height: 500px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("../imagenes/musica.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-contenido {
+    color: white;
+    max-width: 750px;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 21px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: inline-block;
+
+    background-color: #41c2f5;
+    color: #111;
+
+    text-decoration: none;
+
+    padding: 14px 28px;
+    border-radius: 8px;
+
+    font-weight: bold;
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+
+.productos-seccion {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.productos-seccion h2 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.descripcion {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+.busqueda {
+    margin-bottom: 35px;
+}
+
+.busqueda input {
+    width: 350px;
+    max-width: 90%;
+
+    padding: 14px 18px;
+
+    border: 2px solid #ddd;
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.busqueda input:focus {
+    border-color: #417af5;
+}
+
+
+.productos-seccion {
+    background-color: #f2f2f2;
+}
+
+
+
+.producto {
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 30%;
+    min-width: 280px;
+
+    margin: 1%;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.producto img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+.producto p {
+    color: #666;
+
+    line-height: 1.5;
+
+    min-height: 70px;
+
+    margin-bottom: 15px;
+}
+
+
+.precio {
+    display: block;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    color: #111;
+
+    margin-bottom: 18px;
+}
+
+
+.Precio {
+    display: block;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    color: #111;
+
+    margin-bottom: 18px;
+}
+
+
+
+.producto button {
+    background-color: #111;
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.producto button:hover {
+    background-color: #415ff5;
+    color: #111;
+
+    transform: scale(1.05);
+}
+
+
+
+.nosotros {
+    background-color: white;
+
+    text-align: center;
+
+    padding: 70px 30px;
+}
+
+.nosotros h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.nosotros p {
+    max-width: 750px;
+
+    margin: 15px auto;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #555;
+}
+
+.contacto {
+    background-color: #ddd;
+
+    text-align: center;
+
+    padding: 70px 30px;
+}
+
+.contacto h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.contacto p {
+    font-size: 18px;
+    margin: 12px;
+}
+
+
+footer {
+    background-color: #111;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+    line-height: 1.8;
+}
+
+
+#venta-carrito,
+#ventana-carrito {
+    display: none;
+
+    position: fixed;
+
+    z-index: 1000;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carrito-contenido {
+    background-color: white;
+
+    width: 450px;
+    max-width: 90%;
+
+    margin: 100px auto;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.carrito-contenido h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.carrito-contenido h3 {
+    margin: 20px 0;
+}
+
+
+.cerrar {
+    float: right;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+.cerrar:hover {
+    color: red;
+}
+
+
+#lista-carrito p {
+    padding: 10px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.carrito-contenido button {
+    background-color: #111;
+
+    color: white;
+
+    border: none;
+
+    padding: 11px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.carrito-contenido button:hover {
+    background-color: #41b9f5;
+    color: #111;
+}
+
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .producto {
+        width: 45%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .productos-seccion {
+        padding: 45px 15px;
+    }
+
+    .productos-seccion h2,
+    .nosotros h2,
+    .contacto h2 {
+        font-size: 30px;
+    }
+
+    .producto {
+        width: 90%;
+        min-width: auto;
+        margin: 15px auto;
+    }
+
+    .busqueda input {
+        width: 90%;
+    }
+}
